@@ -156,31 +156,32 @@ body {
     align-items: center;
     color: var(--paragraf-color);
     transform: scale(1);
-    transition: background-color, color 0.25s ease-in-out;
+    transition: color, color 0.25s ease-in-out;
 
 }
 
 .contact-soc {
     margin-right: 10px;
     fill: var(--paragraf-color);
+    transition: color, color 0.25s ease-in-out;
 }
 
 .contact:hover,
 .contact:focus {
     color: var(--accent-color);
-    transition: background-color, color 0.25s ease-in-out;
+    transition: color, color 0.25s ease-in-out;
 }
 
 .contact:hover .contact-soc,
 .contact:focus .contact-soc {
     fill: var(--accent-color);
-    transition: background-color, color 0.25s ease-in-out;
+    transition: fill, color 0.25s ease-in-out;
 }
 
 /* ---------------contacts-icon---------------*/
 .contact-soc {
     color: var(--paragraf-color);
-    justify-content: center;
+    transition: color, color 0.25s ease-in-out;
 }
 
 /* .contact-soc:hover,
@@ -702,7 +703,7 @@ body {
     align-items: center;
     justify-content: center;
     /* transform: scale(1); */
-    transition: fill 250ms ease-in-out;
+    transition: border-color 250ms ease-in-out;
 }
 
 .test-link-icon {
@@ -712,7 +713,7 @@ body {
 .test-link:hover,
 .test-link:focus {
     border-color: var(--accent-color);
-    
+    transition: border-color 250ms ease-in-out;
 }
 
 .test-link:hover .test-link-icon {
@@ -856,6 +857,11 @@ body {
     transform: translateY(0%);
     transition: transform 250ms ease-in-out;
 }
+.gallery-bottom-link:hover{
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .gallery-bottom-info {
     position: relative;
@@ -876,6 +882,7 @@ body {
     /* display: flex;
     text-align: center;
     justify-content: center; */
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     transform: translateY(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
