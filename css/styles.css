@@ -163,7 +163,7 @@ body {
 .contact-soc {
     margin-right: 10px;
     fill: var(--paragraf-color);
-    transition: color, color 0.25s ease-in-out;
+    transition: fill, color 0.25s ease-in-out;
 }
 
 .contact:hover,
@@ -276,6 +276,7 @@ body {
     right: 10px;
 }
 
+
 /* .is-hidden {
     opacity: 0.9;
     pointer-events: none;
@@ -333,8 +334,14 @@ body {
     display: flex;
     align-items: baseline;
     justify-content: end;
-    margin-top: -22px;
-    margin-left: 25px;
+    margin-top: 1px;
+    margin-left: 3px;
+    text-decoration: underline;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
 }
 
 .modal-input-wrap {
@@ -371,16 +378,16 @@ body {
 
 .check-text {
     font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16px;
-    letter-spacing: 0.03em;
+        font-size: 12px;
+        line-height: 1.16px;
+        letter-spacing: 0.03em;
     
-    height: 24px;
-
-    color: rgba(117, 117, 117, 1);
-    display: flex;
-    position: relative;
-    align-items: center;
+        height: 24px;
+    
+        color: rgba(117, 117, 117, 1);
+        display: flex;
+        position: relative;
+        align-items: center;
 }
 
 
@@ -401,12 +408,14 @@ body {
 
 .input-check:focus+.check-text span {
     border-color: var(--accent-color);
+    transition: border-color 0.25s ease-in-out;
 }
 
 .input-check:checked+.check-text span {
     background-color: var(--accent-color);
     border-color: transparent;
     fill: #ffffff;
+    transition: background-color 0.25s ease-in-out;
 }
 
 .button-modol-button{
@@ -715,6 +724,7 @@ body {
 .button-primary-hero:focus {
     background-color: var(--background-button);
     color: var(--title-text-color);
+    transition: background-color 0.25s ease-in-out;
 }
 
 .button-primary {
@@ -765,11 +775,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: color, color 0.25s ease-in-out;
 }
 
 .buttom-close-icon:hover,
 .buttom-close-icon:focus{
     fill: var(--accent-color);
+    transition: fill, color 0.25s ease-in-out;
 }
 
 /* ---------------gallery--------------- */
@@ -865,6 +877,7 @@ body {
 
 .test-link-icon {
     fill: #AFB1B8;
+    transition: border-color 0.25s ease-in-out;
 }
 
 .test-link:hover,
@@ -955,7 +968,7 @@ body {
     color: var(--studio-title);
     margin-bottom: 20px;
     display: flex;
-        align-items: baseline;
+    align-items: baseline;
 }
 /* .vid{
     display: flex;
@@ -963,42 +976,47 @@ body {
     
 } */
 .foot-div{
-    /* display: flex;
-    align-items: baseline; */
-    padding-left: 900px;
-    /* padding-top: -300px; */
-    margin-top: -132px;
+    padding-left: 93px;
 }
 .input-footer {
     background-color: rgba(47, 48, 58, 1);
+    color: var(--studio-title);
     width: 358px;
     height: 50px;
     left: 815px;
     top: 2784px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    padding-left: 16px;
+    margin-right: 12px;
 }
 .input-footer::placeholder {
     font-size: 14px;
-    color: #9da4bd;
-    padding-left: 16px;
+    color: rgba(255, 255, 255, 0.3);
+    /* padding-left: 16px; */
     padding-bottom: 15px;
 }
 .buttom-sive{
     background-color: var(--accent-color);
     color: #FFFFFF;
-    border-radius: none;
+    
     width: 200px;
     height: 50px;
     left: 1185px;
     top: 2784px;
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.87;
     letter-spacing: 0.06em;
     border: 1px solid var(--accent-color);
     border-radius: 4px;
+    padding-right: 28px;
+    
 }
+.footer-svg{
+    position: absolute;
+    margin-left: 10px;
+    }
 /* ---------------------univers------------- */
 .section-uni {
     /* border-radius: 4px; */
