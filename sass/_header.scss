@@ -1,0 +1,50 @@
+.header {
+    height: 80px;
+    padding-bottom: 25px;
+    padding-top: 24px;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.logo {
+    color: var(--accent-color);
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.studio {
+    color: var(--title-text-color);
+    font-family: Raleway, cursive;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo:hover {
+    color: var(--accent-color);
+
+}
+
+.item {
+    transition: background-color 0.25s ease-in-out;
+}
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+}
+
+.auth-nav .item+.item {
+    margin-left: 50px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
