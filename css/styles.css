@@ -156,26 +156,26 @@ body {
     align-items: center;
     color: var(--paragraf-color);
     transform: scale(1);
-    transition: color, color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out;
 
 }
 
 .contact-soc {
     margin-right: 10px;
     fill: var(--paragraf-color);
-    transition: fill, color 0.25s ease-in-out;
+    transition: fill 0.25s ease-in-out;
 }
 
 .contact:hover,
 .contact:focus {
     color: var(--accent-color);
-    transition: color, color 0.25s ease-in-out;
+    transition: color 0.25s ease-in-out;
 }
 
 .contact:hover .contact-soc,
 .contact:focus .contact-soc {
     fill: var(--accent-color);
-    transition: fill, color 0.25s ease-in-out;
+    transition: fill 0.25s ease-in-out;
 }
 
 /* ---------------contacts-icon---------------*/
@@ -274,6 +274,15 @@ body {
     height: 30px;
     top: 10px;
     right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttom-close-icon:hover,
+.buttom-close-icon:focus {
+    fill: var(--accent-color);
+    transition: fill 0.25s ease-in-out;
 }
 
 
@@ -306,9 +315,10 @@ body {
     height: 45px;
     font-size: 14px;
     color: var(--paragraf-color);
-    padding-left: 30px;
+    padding-left: 35px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    cursor: pointer;
 }
 .modal-input-icon {
     position: absolute;
@@ -329,11 +339,11 @@ body {
     display: block;
     margin-bottom: 20px;
 }
-.span-title{
+.span-title {
     color: var(--accent-color);
     display: flex;
-    align-items: baseline;
-    justify-content: end;
+    align-items: center;
+    justify-content: center;
     margin-top: 1px;
     margin-left: 3px;
     text-decoration: underline;
@@ -342,6 +352,18 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     
+}
+.par-title {
+    margin-top: 1px;
+    margin-left: 3px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .modal-input-wrap {
@@ -363,12 +385,13 @@ body {
     border-radius: 4px;
     resize: none;
     padding: 10px;
+    cursor: pointer;
 }
 .modal-textarea:focus {
     outline-color: var(--accent-color);
 }
 .modal-textarea::placeholder {
-    padding: 12px 16px;
+    padding-top: 10px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16px;
@@ -433,6 +456,7 @@ body {
     color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    cursor: pointer;
 }
 .button-modol-button :hover,
 .button-modol-button :hover{
@@ -630,6 +654,7 @@ body {
 
 }
 
+
 .test-link {
     height: 100%;
     border: 1px solid #AFB1B8;
@@ -673,7 +698,7 @@ body {
 .test-link-icon {
     margin: 10px;
     fill: #757575;
-
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-text {
@@ -770,18 +795,6 @@ body {
     flex-wrap: wrap;
     border-radius: 4px;
     margin-bottom: 50px;
-}
-.buttom-close-icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: color, color 0.25s ease-in-out;
-}
-
-.buttom-close-icon:hover,
-.buttom-close-icon:focus{
-    fill: var(--accent-color);
-    transition: fill, color 0.25s ease-in-out;
 }
 
 /* ---------------gallery--------------- */
