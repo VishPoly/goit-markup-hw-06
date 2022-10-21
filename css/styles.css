@@ -260,6 +260,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .buttom-close-icon:hover,
@@ -364,10 +365,11 @@
     height: 120px;
     left: 576px;
     top: 519px;
+    font-size: 12px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     resize: none;
-    padding: 10px;
+    padding: 12px 16px;
     cursor: pointer;
 }
 .modal-textarea:focus {
