@@ -337,7 +337,7 @@ body {
 .modal-field,
 .modal-label {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .span-title {
     color: var(--accent-color);
@@ -411,6 +411,7 @@ body {
         display: flex;
         position: relative;
         align-items: center;
+        justify-content: center;
 }
 
 
@@ -1024,7 +1025,7 @@ body {
     border: 1px solid var(--accent-color);
     border-radius: 4px;
     padding-right: 28px;
-    
+    cursor: pointer;
 }
 .footer-svg{
     position: absolute;
